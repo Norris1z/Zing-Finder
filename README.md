@@ -21,20 +21,24 @@ use Zing\Finder\Exceptions\DirectoryException;
 use Zing\Finder\Finder;
 
 try {
-    // this setsup the directory foo/bar/dir
-    $find = new Finder('foo/bar/dir');
+
+   //Path to the directory can be passed through the constructor or the setDirectory method.
+    $file = new Finder('foo/bar/dir');
+    
+    //setting path to the directory through setDirectory
+    $file->setDirectory('foo/bar/dir');
     
     // this scans through a directory 
     // it accepts a boolean parameter which is set to false by default
     // to scan through the directory and subdirectories in the directory set parameter to true
-    $find->search(); //searches through a directory 
-    $find->search(true); //searches both directories and subdirectories 
+    var_dump($find->search()); // prints all files in the directory 
+    var_dump($find->search(true)); //prints files in both directories and subdirectories 
     
     // finds and displays files in a directory given an extentsion 
-    $find->findFilesWithExtension('extension')->show();
+    var_dump($find->findFilesWithExtension('extension')->show());
     
     //includes sub-directories
-     $find->findFilesWithExtension('extension',true)->show();
+     var_dump($find->findFilesWithExtension('extension',true)->show());
     
     // finds and deletes files in a directory given an extentsion 
      $find->findFilesWithExtension('extension')->delete();
