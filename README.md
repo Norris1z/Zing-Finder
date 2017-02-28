@@ -8,7 +8,7 @@ Zing Finder can be downloaaded into a project by cloning the repo ```norris1z/Zi
 installing this package through Composer. Run this command from the Terminal to install the package through composer:
 
 ```bash
-composer require norris1z/Zing-Finder
+composer require norris1z/zing_finder
 ```
 
 ### Usage
