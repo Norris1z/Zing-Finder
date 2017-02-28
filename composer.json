@@ -1,5 +1,5 @@
 {
-  "name": "Zing/finder",
+  "name": "zing/finder",
   "description": "A flexible library for performing operations on files and directories",
   "license": "MIT",
   "type": "library",
