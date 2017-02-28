@@ -1,0 +1,22 @@
+{
+  "name": "Zing/finder",
+  "description": "A flexible library for performing operations on files and directories",
+  "license": "MIT",
+  "type": "library",
+  "keywords": ["norris1z","files","finder","php"],
+  "authors": [
+    {
+      "name": "Norris Oduro",
+      "email": "norrisjibril@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4"
+  },
+  "autoload": {
+    "psr-4": {
+        "Zing\\Finder\\" : "src/"
+    }
+  }
+}
